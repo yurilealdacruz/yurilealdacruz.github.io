@@ -55,11 +55,15 @@ body {
     display: block;
     padding: 10px 20px;
     box-shadow: none;
-
+}
+.links li a h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 17px;
 }
 .links li a span {
     display: block;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 13px;
 }
 h2 {
     font-family: 'Splash', cursive;
