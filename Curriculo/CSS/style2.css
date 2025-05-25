@@ -105,3 +105,10 @@ hr {
     border-top: 2px solid #000;
     margin-bottom: 10px;
 }
+
+#download {
+    text-align: right;
+    position: relative;
+    float: right;
+    color: grey;
+}
