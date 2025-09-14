@@ -1,0 +1,137 @@
+/* 1. Variáveis e Estilos Globais */
+:root {
+    --bg-color: #f4f7f9;
+    --sidebar-bg: #2c3e50;
+    --main-bg: #ffffff;
+    --text-light: #fdfdfd;
+    --text-dark: #333333;
+    --text-muted: #6c757d;
+    --accent-color: #3498db;
+    --border-color: #e9ecef;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--main-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.25rem; font-weight: 400; color: var(--text-muted); }
+h3 { font-size: 1.4rem; color: var(--accent-color); border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-bottom: 20px;}
+h4 { font-size: 1.1rem; font-weight: 700; }
+a { color: var(--accent-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+p { line-height: 1.6; }
+
+/* 2. Header */
+header {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#download-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+#download-btn:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
+
+/* 3. Layout Principal (Grid) */
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Coluna única por padrão (mobile) */
+}
+
+/* 4. Sidebar (Coluna da Esquerda) */
+.sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--text-light);
+    padding: 30px;
+}
+.sidebar h3 { color: var(--text-light); border-color: #4a627a; }
+.sidebar a { color: var(--text-light); }
+.sidebar section { margin-bottom: 30px; }
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+.contact-list li {
+    margin-bottom: 15px;
+}
+.contact-list strong {
+    color: var(--accent-color);
+}
+
+.education-details {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* 5. Habilidades (Skill Tags) */
+.skill-group { margin-bottom: 20px; }
+.skill-group h4 { color: var(--text-muted); margin-bottom: 10px; font-weight: 500; }
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skill-tags span {
+    background-color: #34495e;
+    color: var(--text-light);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* 6. Conteúdo Principal (Coluna da Direita) */
+.main-content {
+    padding: 30px;
+}
+.main-content section { margin-bottom: 30px; }
+.experience article, .projects article {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid var(--border-color);
+}
+.job-details { color: var(--text-muted); margin: 5px 0 10px; }
+.experience ul { padding-left: 20px; }
+.experience ul li { margin-bottom: 5px; }
+
+.project-tags { margin-top: 10px; }
+.project-tags span { background-color: var(--border-color); color: var(--text-dark); }
+
+/* 7. Media Query para Responsividade (Telas maiores) */
+@media (min-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 300px 1fr; /* Duas colunas em telas maiores */
+    }
+    body { padding: 40px; }
+}

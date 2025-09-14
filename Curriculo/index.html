@@ -1,127 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuri Leal da Cruz - Currículo</title>
+    <title>Currículo - Yuri Leal da Cruz</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style2.css">
-    <script src="JS/js.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>YURI LEAL DA CRUZ</h1>
-             <a id="download" href="#" onclick="baixarArquivos()">Download</a>
-            <h2>Desenvolvedor de Software</h2>
-            <div class="social-links">
-                <a href="http://linkedin.com/in/yurilealdacruz" target="_blank">
-                    <img src="image/logo-linkedin.png" alt="LinkedIn" class="social-icons"/>
-                </a>
-                <a href="https://github.com/yurilealdacruz" target="_blank">
-                    <img src="image/logo-github.png" alt="GitHub" class="social-icons"/>
-                </a>
-                <!--
-                <a href="https://www.instagram.com/yakirodmorfera/" target="_blank">
-                    <img src="image/logo-instagram.png" alt="Instagram" class="social-icons"/>
-                </a>
-                
-                --> 
+            <div class="header-content">
+                <h1>YURI LEAL DA CRUZ</h1>
+                <h2>Desenvolvedor de Software</h2>
             </div>
-            <br>
-            <div class="contact-info">
-                <strong>Email:</strong> <a href="mailto:yuritech77@gmail.com">yuritech77@gmail.com</a> |
-                <strong>Telefone:</strong> <a href="https://wa.me/5571986405837" target="_blank">(71) 9 8640-5837</a>
-            </div>
+        <button id="download-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Download PDF
+        </button>
         </header>
 
-        <hr>
+        <div class="resume-grid">
+            <aside class="sidebar">
+                <section>
+                    <h3>Contato</h3>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong><br><a href="mailto:yuritech77@gmail.com">yuritech77@gmail.com</a></li>
+                        <li><strong>Telefone:</strong><br><a href="https://wa.me/5571986405837" target="_blank">(71) 9 8640-5837</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Links</h3>
+                    <ul class="contact-list">
+                        <li><a href="http://linkedin.com/in/yurilealdacruz" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yurilealdacruz" target="_blank">GitHub</a></li>
+                    </ul>
+                </section>
+                <section class="skills">
+                        <h3>Habilidades</h3>
+                        
+                        <div class="skill-group">
+                            <h4>Linguagens</h4>
+                            <div class="skill-tags">
+                                <span>TypeScript</span><span>JavaScript</span><span>Python</span><span>SQL</span>
+                            </div>
+                        </div>
 
-        <section class="summary">
-            <h3>Resumo Profissional</h3>
-            <p>Desenvolvedor de software com base sólida em programação backend e frontend. Experiência em construção de APIs REST, automação de tarefas, e interfaces intuitivas com foco em eficiência e escalabilidade. Domínio de tecnologias como Python, Django, TypeScript, Angular e bancos de dados relacionais. Comprometido com boas práticas de código, segurança e aprendizado contínuo. Busca integrar uma equipe de desenvolvimento para contribuir com soluções robustas e de alto impacto.</p>
-        </section>
+                        <div class="skill-group">
+                            <h4>Front-End</h4>
+                            <div class="skill-tags">
+                                <span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4>Back-End</h4>
+                            <div class="skill-tags">
+                                <span>NestJS</span><span>Node.js</span><span>Django</span>
+                            </div>
+                        </div>
 
-        <section class="skills">
-            <h3>Habilidades Técnicas</h3>
-            <ul>
-                    <li><strong>Linguagens: </strong>Python, JavaScript, TypeScript, Java</li>
-                    <li><strong>Frameworks: </strong>Django, CustomTKinter, NestJS, Angular</li>
-                    <li><strong>Bancos de Dados: </strong>MySQL, PostgreSQL, SQLite</li>
-                    <li><strong>DevOps: </strong>Git, GitHub, Linux, Shell Script</li>
-                    <li><strong>Outros: </strong> APIs REST, POO, Clean Code, Automatização de Tarefas</li>
-                  </ul>
-            
-        </section>
+                        <div class="skill-group">
+                            <h4>Ferramentas & DevOps</h4>
+                            <div class="skill-tags">
+                                <span>Git</span><span>GitHub</span><span>Vitest</span><span>Playwright</span><span>Vercel</span><span>Nginx</span><span>PM2</span><span>Linux</span>
+                            </div>
+                        </div>
 
-        <section class="education">
-            <h3>Formação Acadêmica</h3>
-            <ul>
-           <li><p><strong>Graduação em Análises e Desenvolvimento de Sistemas</strong> - Universidade Estácio de Sá (Jul/2021 – Dez/2023)</p></li>
-            </ul>
-        </section>
+                        <div class="skill-group">
+                            <h4>Bancos de Dados</h4>
+                            <div class="skill-tags">
+                                <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+                            </div>
+                        </div>
+                    </section>
+                <section>
+                    <h3>Formação</h3>
+                    <p><strong>Análises e Des. de Sistemas</strong></p>
+                    <p class="education-details">Universidade Estácio de Sá<br>Jul/2021 – Dez/2023</p>
+                </section>
+            </aside>
 
-        <section class="portfolio">
-            <h3>Experiência Profissional</h3>
-            <ul>
-                <li>    
-                    <h4>Técnico e Suporte em TI | SENAI CIMATEC | 08/2022 – Atual</h4>
-                    <p>- Suporte técnico a usuários em ambiente acadêmico e laboratórios <br>
-                    - Instalação e configuração de sistemas operacionais e softwares educacionais<br>
-                    - Manutenção preventiva e corretiva de computadores e rede<br>
-                    - estão de infraestrutura de rede e conectividade em salas de aula</p>
-                </li>
+            <main class="main-content">
+                <section>
+                    <h3>Resumo Profissional</h3>
+                    <p>Desenvolvedor de Software focado na construção de aplicações web modernas e performáticas com o ecossistema JavaScript/TypeScript. Experiência na criação de interfaces reativas e dinâmicas (SPAs) com React, e em arquiteturas full-stack com Next.js, utilizando Server Components e Server Actions. Capaz de desenvolver APIs REST robustas e seguras com NestJS, implementando autenticação via JWT e integração com bancos de dados como PostgreSQL. Comprometido com a qualidade de código, testes automatizados (Vitest, Playwright) e práticas de CI/CD para deploy em plataformas como Vercel e servidores Linux.</p>
+                </section>
 
-                <li>
-                    <h4>Telemarketing e Vendas | Educa Mais Brasil</h4>
-                    <p>- Atendimento receptivo e ativo com foco em vendas de cursos educacionais<br>
-                    - Captação de clientes, negociação e fechamento de matrículas
-                    </p>
-                </li>
-            </ul>
-        </section>
+                <section class="experience">
+                    <h3>Experiência Profissional</h3>
+                    <article>
+                        <h4>Técnico de Informática</h4>
+                        <p class="job-details">SENAI CIMATEC | 08/2022 – Atual</p>
+                        <ul>
+                            <li>Suporte técnico a usuários em ambiente acadêmico e laboratórios.</li>
+                            <li>Instalação e configuração de sistemas operacionais e softwares.</li>
+                            <li>Manutenção preventiva e corretiva de computadores e rede.</li>
+                            <li>Gestão de infraestrutura de rede em salas de aula.</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h4>Telemarketing e Vendas</h4>
+                        <p class="job-details">Educa Mais Brasil</p>
+                        <ul>
+                            <li>Atendimento receptivo e ativo com foco em vendas de cursos.</li>
+                            <li>Captação de clientes, negociação e fechamento de matrículas.</li>
+                        </ul>
+                    </article>
+                </section>
 
-        <section class="portfolio">
-            <h3>Projetos Relevantes</h3>
-            <ul>
-                <li>
-                  <h4><a href="https://github.com/yurilealdacruz/Controle-de-estoque-Django" target="_blank">Controle de Estoque com Django</a></h4>
-                  <h5>Tecnologias:</h5>
-                  <p>Python | Django | MySQL <br>
-                  Sistema web para controle de estoque e rastreamento de retiradas com dashboard e gráficos interativos.</p>
-                </li>
-                <li>
-                  <h4><a href="https://github.com/yurilealdacruz/API-NestJS" target="_blank">API RESTful com NestJS</a></h4>
-                  <h5>Tecnologias:</h5>
-                  <p>TypeScript | NestJS | PostgreSQL <br>
-                  API desenvolvida com segurança integrada (JWT) e suporte a operações CRUD.</p>
-                </li>
-                <li>
-                  <h4><a href="https://github.com/yurilealdacruz/Controle-de-Estoque" target="_blank">Sistema de Controle de Estoque - Desktop</a></h4>
-                  <h5>Tecnologias:</h5>
-                  <p>Python | CustomTkinter | PostgreSQL <br>
-                  Aplicação desktop para gerenciamento de inventário, permitindo adição, remoção e visualização de itens.</p>
-                </li>
-                <li>
-                  <h4><a href="https://github.com/yurilealdacruz/Youtube-Download" target="_blank">Downloader de Vídeos do YouTube</a></h4>
-                  <h5>Tecnologias:</h5>
-                  <p>Python | CustomTkinter | yt-dlp <br>
-                  Ferramenta para download de vídeos com interface gráfica intuitiva.</p>
-                </li>
-              </ul>
-        </section>
-
-       
-
-       <!--
-         <footer class="footer">
-            <p>Desenvolvido por Yuri Leal da Cruz</p>
-        </footer>
-       -->
+                <section class="projects">
+                    <h3>Projetos Relevantes</h3>
+                      <article>
+                            <h4>Aplicação Web Full-Stack com Next.js e NestJS</h4>
+                            <p>Desenvolvimento de uma aplicação completa com front-end renderizado no servidor (SSR) usando Next.js 15 (App Router) e back-end com uma API REST construída em NestJS. Inclui autenticação de usuários com JWT e cookies httpOnly, upload de arquivos, e interface estilizada com Tailwind CSS.</p>
+                            <div class="skill-tags project-tags">
+                            <span>Next.js</span><span>React</span><span>TypeScript</span><span>NestJS</span><span>Tailwind CSS</span><span>JWT</span>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <h4><a href="https://github.com/yurilealdacruz/Front-End-React-Estoque" target="_blank">Controle de Estoque com React e Django</a></h4>
+                            <p>Sistema web para controle de estoque e rastreamento de retiradas com dashboard e gráficos interativos.</p>
+                            <div class="skill-tags project-tags">
+                            <span>Python</span><span>Django</span><span>MySQL</span>
+                            </div>
+                        </article>
+                        <article>
+                            <h4><a href="https://github.com/yurilealdacruz/API-NestJS" target="_blank">API RESTful com NestJS</a></h4>
+                            <p>API desenvolvida com segurança integrada (JWT) e suporte a operações CRUD.</p>
+                            <div class="skill-tags project-tags">
+                            <span>TypeScript</span><span>NestJS</span><span>PostgreSQL</span>
+                            </div>
+                        </article>
+                </section>
+            </main>
+        </div>
     </div>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="JS/script.js"></script>
+
 </body>
 </html>
