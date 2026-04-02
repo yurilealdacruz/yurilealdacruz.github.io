@@ -3,149 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Yuri Leal da Cruz</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Currículo - YURI LEAL DA CRUZ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        h2.subtitle {
+            color: #3498db;
+            margin-top: 0;
+            font-weight: 400;
+        }
+        h2.section-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .item-subtitle {
+            font-weight: bold;
+            color: #555;
+        }
+        .item-date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
         <header>
-            <div class="header-content">
-                <h1>YURI LEAL DA CRUZ</h1>
-                <h2>Desenvolvedor de Software | C# .NET</h2>
+            <h1>YURI LEAL DA CRUZ [cite: 1]</h1>
+            <h2 class="subtitle">Desenvolvedor de Software | C# .NET [cite: 2]</h2>
+            <div class="contact-info">
+                Salvador, BA | (71) 9 8640-5837 | <a href="mailto:yuritech77@gmail.com">yuritech77@gmail.com</a> [cite: 3]<br>
+                LinkedIn: <a href="https://www.linkedin.com/in/yurilealdacruz" target="_blank">linkedin.com/in/yurilealdacruz</a> [cite: 3] | 
+                Github: <a href="https://github.com/yurilealdacruz" target="_blank">github.com/yurilealdacruz</a> [cite: 3]
             </div>
-        <button id="download-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-            </svg>
-            Download PDF
-        </button>
         </header>
 
-        <div class="resume-grid">
-            <aside class="sidebar">
-                <section>
-                    <h3>Contato</h3>
-                    <ul class="contact-list">
-                        <li><strong>Email:</strong><br><a href="mailto:yuritech77@gmail.com">yuritech77@gmail.com</a></li>
-                        <li><strong>Telefone:</strong><br><a href="https://wa.me/5571986405837" target="_blank">(71) 9 8640-5837</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Links</h3>
-                    <ul class="contact-list">
-                        <li><a href="http://linkedin.com/in/yurilealdacruz" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/yurilealdacruz" target="_blank">GitHub</a></li>
-                    </ul>
-                </section>
-                <section class="skills">
-                        <h3>Habilidades</h3>
-                        
-                        <div class="skill-group">
-                            <h4>Backend</h4>
-                            <div class="skill-tags">
-                                <span>C#</span><span>.NET Core</span><span>Entity Framework</span><span>LINQ</span><span>POO</span><span>SOLID</span><span>API REST</span><span>Django</span><span>NestJS</span>
-                            </div>
-                        </div>
+        <section>
+            <h2 class="section-title">RESUMO PROFISSIONAL [cite: 4]</h2>
+            <p>Desenvolvedor de Software com sólida base em lógica de programação e arquitetura web, em transição para .NET (C#). [cite: 5] Experiência na criação de aplicações utilizando React, Python (Django) e NestJS. [cite: 6] Atualmente focado em Programação Orientada a Objetos (POO), princípios SOLID e desenvolvimento de aplicações corporativas com .NET Core e Entity Framework. [cite: 7] Profissional com alta capacidade de diagnóstico técnico e resolução de problemas críticos. [cite: 8]</p>
+        </section>
 
-                        <div class="skill-group">
-                            <h4>Linguagens & Web</h4>
-                            <div class="skill-tags">
-                                <span>TypeScript</span><span>JavaScript</span><span>Python</span><span>SQL</span>
-                            </div>
-                        </div>
+        <section>
+            <h2 class="section-title">HABILIDADES TÉCNICAS [cite: 9]</h2>
+            <ul>
+                <li><strong>Backend:</strong> C#, .NET Core, ASP.NET Web API, Entity Framework, LINQ, POO, SOLID, Django, NestJS. [cite: 10]</li>
+                <li><strong>Frontend:</strong> React, Next.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3. [cite: 11]</li>
+                <li><strong>Bancos de Dados:</strong> SQL Server, PostgreSQL, MySQL. [cite: 12]</li>
+                <li><strong>Ferramentas & DevOps:</strong> Git, GitHub, Docker, Linux (Arch Linux), Visual Studio, VS Code. [cite: 13]</li>
+            </ul>
+        </section>
 
-                        <div class="skill-group">
-                            <h4>Front-End</h4>
-                            <div class="skill-tags">
-                                <span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>HTML5/CSS3</span>
-                            </div>
-                        </div>
+        <section>
+            <h2 class="section-title">EXPERIÊNCIA PROFISSIONAL [cite: 14]</h2>
+            
+            <div>
+                <div class="item-header">
+                    <span class="item-title">SENAI CIMATEC [cite: 15]</span>
+                    <span class="item-date">Agosto de 2022 – Atual [cite: 15]</span>
+                </div>
+                <div class="item-subtitle">Técnico de Informática [cite: 15]</div>
+                <ul>
+                    <li>Responsável pelo suporte técnico e manutenção preventiva de infraestrutura tecnológica em ambiente acadêmico e laboratorial. [cite: 16]</li>
+                    <li>Redução do tempo de inatividade de sistemas através da otimização de processos de correção de hardware e redes. [cite: 17]</li>
+                    <li>Atuação em diagnósticos complexos para garantir a alta disponibilidade de serviços de tecnologia. [cite: 18]</li>
+                </ul>
+            </div>
 
-                        <div class="skill-group">
-                            <h4>Ferramentas & DevOps</h4>
-                            <div class="skill-tags">
-                                <span>Git</span><span>GitHub</span><span>Visual Studio</span><span>Docker</span><span>Linux</span>
-                            </div>
-                        </div>
+            <div>
+                <div class="item-header">
+                    <span class="item-title">Educa Mais Brasil [cite: 19]</span>
+                    <span class="item-date">16/11/2021 - 15/03/2022 [cite: 19]</span>
+                </div>
+                <div class="item-subtitle">Telemarketing e Vendas [cite: 19]</div>
+                <ul>
+                    <li>Desenvolvimento de soft skills voltadas para negociação, resolução de conflitos e foco em resultados sob pressão. [cite: 20]</li>
+                </ul>
+            </div>
+        </section>
 
-                        <div class="skill-group">
-                            <h4>Bancos de Dados</h4>
-                            <div class="skill-tags">
-                                <span>PostgreSQL</span><span>MySQL</span><span>SQL Server</span>
-                            </div>
-                        </div>
-                    </section>
-                <section>
-                    <h3>Formação</h3>
+        <section>
+            <h2 class="section-title">PROJETOS RELEVANTES [cite: 21]</h2>
+            
+            <div>
+                <div class="item-header">
+                    <span class="item-title">Sistema de Controle de Estoque NTI [cite: 22]</span>
+                    <span class="item-date">Stack: React, Python (Django), Tailwind CSS [cite: 22]</span>
+                </div>
+                <ul>
+                    <li>Desenvolveu uma solução completa para gestão de insumos tecnológicos, permitindo controle de entradas, saídas e rastreabilidade de itens. [cite: 23]</li>
+                    <li>Implementou logs de auditoria detalhados e histórico de movimentações por usuário, garantindo a integridade dos dados. [cite: 24]</li>
+                    <li>Criou funcionalidades de busca em tempo real, geração de QR Codes para produtos e exportação de relatórios para Excel. [cite: 25]</li>
+                </ul>
+            </div>
 
-                    <p><strong>Pós-graduação em Engenharia de Software</strong></p>
-                    <p class="education-details">UCSAL - Universidade Católica do Salvador<br>Jan/2026 – Em andamento</p>
+            <div>
+                <div class="item-header">
+                    <span class="item-title">Sistema Web de Vendas (SalesWebMvc) [cite: 26]</span>
+                    <span class="item-date">Stack: C#, ASP.NET Core MVC, Entity Framework Core, LINQ [cite: 26]</span>
+                </div>
+                <ul>
+                    <li>Desenvolveu um sistema de gestão de vendas ponta a ponta, facilitando o controle de vendedores e registros de transações. [cite: 27]</li>
+                    <li>Aplicou o padrão de arquitetura MVC para garantir escalabilidade e separação de responsabilidades. [cite: 28]</li>
+                    <li>Implementou persistência de dados e modelagem relacional otimizada utilizando Entity Framework e LINQ. [cite: 29]</li>
+                </ul>
+            </div>
+        </section>
 
-                    <p><strong>Graduação em Análise e Desenvolvimento de Sistemas</strong></p>
-                    <p class="education-details">Universidade Estácio de Sá<br>Jul/2021 – Dez/2023 (Completo)</p> 
-                    
-                
-                </section>
-            </aside>
-
-            <main class="main-content">
-                <section>
-                    <h3>Resumo Profissional</h3>
-                    <p>Desenvolvedor de Software em transição estratégica para o ecossistema .NET (C#), aproveitando uma sólida base em lógica de programação e arquitetura web (JavaScript/TypeScript). Atualmente focado no aprofundamento em Programação Orientada a Objetos (POO), princípios SOLID e desenvolvimento de aplicações corporativas com .NET Core e Entity Framework. Profissional com facilidade de aprendizado (Fast Learner), capaz de integrar novos conhecimentos de backend C# com experiência prévia em APIs REST e bancos de dados relacionais.</p>
-                </section>
-
-                <section class="projects">
-                    <h3>Projetos Relevantes</h3>
-                    <article>
-                        <h4>Sistema de Jogo de Xadrez (Console)</h4>
-                        <p>Aplicação complexa desenvolvida em C# puro para aplicação profunda de POO. O sistema implementa toda a lógica oficial do xadrez, utilizando matrizes, encapsulamento, herança, polimorfismo e tratamento de exceções customizadas.</p>
-                        <div class="skill-tags project-tags">
-                        <span>C#</span><span>.NET</span><span>Lógica Avançada</span><span>POO</span>
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <h4>Sistema Web de Vendas (SalesWebMvc)</h4>
-                        <p>Aplicação Web completa desenvolvida com C# e .NET, implementando padrão MVC. Inclui cadastro de vendedores, registro de vendas e gerenciamento de status, utilizando Entity Framework para persistência de dados.</p>
-                        <div class="skill-tags project-tags">
-                        <span>C#</span><span>ASP.NET Core</span><span>Entity Framework</span><span>LINQ</span><span>MVC</span>
-                        </div>
-                    </article>
-                </section>
-
-                <section class="experience">
-                    <h3>Experiência Profissional</h3>
-                    <article>
-                        <h4>Técnico de Informática</h4>
-                        <p class="job-details">SENAI CIMATEC | 08/2022 – Atual</p>
-                        <ul>
-                            <li>Suporte técnico e manutenção de infraestrutura.</li>
-                            <li>Instalação e configuração de sistemas operacionais e softwares.</li>
-                            <li>Manutenção preventiva e corretiva de computadores e rede.</li>
-                            <li>Interação constante com ambiente acadêmico e tecnológico de ponta.</li>
-                        </ul>
-                    </article>
-                    <article>
-                        <h4>Telemarketing e Vendas</h4>
-                        <p class="job-details">Educa Mais Brasil</p>
-                        <ul>
-                            <li>Atendimento receptivo e ativo com foco em vendas e negociação.</li>
-                        </ul>
-                    </article>
-                </section>
-            </main>
-        </div>
+        <section>
+            <h2 class="section-title">FORMAÇÃO ACADÊMICA [cite: 30]</h2>
+            <ul>
+                <li><strong>Pós-graduação em Engenharia de Software</strong> | UCSAL – Universidade Católica do Salvador | Jan/2026 – Em andamento [cite: 31]</li>
+                <li><strong>Graduação em Análise e Desenvolvimento de Sistemas</strong> | Universidade Estácio de Sá | Concluído em Dez/2023 [cite: 32]</li>
+            </ul>
+        </section>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="JS/script.js"></script>
 
 </body>
 </html>
